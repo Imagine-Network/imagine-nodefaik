@@ -17,72 +17,30 @@
 
 <body>
     <nav class="navbar">
-        <a onclick="toggleSidebar()" class="app-link">Apps</a>
-        <a href="#" class="game-link"><i class="fas fa-gamepad"></i> Games</a>
+        <a href="apps.html" class="app-link">Apps</a>
+        <a href="tabs.html" class="game-link"><i class="fas fa-gamepad"></i>Tabs</a>
       </nav>
       
-    <div class="main-wrapper">
     <div class="flex-center logo-wrapper header-center">
         <img class="logo" src="image.png" />
         <h1>Imagine</h1>
+        <p class="minecraft-text">V3.01 Tabs fix</p>
+
     </div>
-    <div id="particles-js"></div>
     <div class="flex-center desc">
-    </div>
-    <button onclick="openURL('https://netflix.com')"> Netflix</button>
-    <button onclick="openURL('https://discord.com/app')"> Discord</button>
-    <button onclick="openURL('https://rpc.lol')"> RPC</button>
-    <button onclick="openURL('https://youtube.com')"> Youtube</button>
-    <button onclick="openURL('https://chat.openai.com')"> CHATGPT</button>
-    <button onclick="openURL('https://scratch.mit.edu')"> Scratch</button>
-c
-
-
 
 
     <form id="form" class="flex-center">
         <input id="address" placeholder="put url in" />
-        <h5>test</h5>
+        
     </form>
-
-   
-
-
-    <div class="sidebar" id="sidebar">
-        <h2>Sidebar Content</h2>
-        asdasdsadsa
-        <p>Your sidebar content goes here.</p>
-    </div>
-
-
-    <script>
-    function toggleSidebar() {
-            const sidebar = document.getElementById('sidebar');
-            sidebar.classList.toggle('active');
-            
-            // Check if the sidebar is active
-            if (sidebar.classList.contains('active')) {     
-                // Load new content into the sidebar when it's toggled
-                sidebar.innerHTML = `
-                    <button onclick="openURL('https://spotify.com')">
-                    <img src="https://clipground.com/images/png-spotify-1.png" width="100" alt="your-image-alt">
-                    <br>
-                    </button>
-                    <p>Google</p>
-                    
-                `;
-            }
-        }
-    </script>
-
-
-
+    <script src="index.js"></script>
     <script src="uv/uv.bundle.js"></script>
     <script src="uv/uv.config.js"></script>
     <script src="register-sw.js"></script>
-    <script src="uv.js"></script>
+    <script src="uvstuff.js"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="lmao.js"></script>
+    <script src="particles.js"></script>
 </body>
 
 </html>
